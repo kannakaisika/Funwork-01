@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+button {
+  background-color:#0000ff;
+  color: white;
+  align-items: center;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+.box-sizing{
+  border-box;
+}
+.img-container {
+  float:Left
+}
+
+.topnav {
+overflow: hidden;
+background-color:light;
+}
+  .topnav a {
+    float: left;
+    color:#000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .filterDiv{
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+</style>
+<body>
+  <div class="container mt-3">
+    <div class="autosize" style="text-align:center">
+      <a href="#" onclick="filterSelection('0-9')">0-9</a>
+        <a href="#" onclick="filterSelection('A')">A</a>
+        <a href="#" onclick="filterSelection('B')">B</a>
+        <a href="#" onclick="filterSelection('C')">C</a>
+        <a href="#" onclick="filterSelection('D')">D</a>
+        <a href="#" onclick="filterSelection('E')">E</a>
+        <a href="#" onclick="filterSelection('F')">F</a>
+        <a href="#" onclick="filterSelection('G')">G</a>
+        <a href="#" onclick="filterSelection('H')">H</a>
+        <a href="#" onclick="filterSelection('I')">I</a>
+        <a href="#" onclick="filterSelection('J')">J</a>
+        <a href="#" onclick="filterSelection('K')">K</a>
+        <a href="#" onclick="filterSelection('L')">L</a>
+        <a href="#" onclick="filterSelection('M')">M</a>
+        <a href="#" onclick="filterSelection('N')">N</a>
+        <a href="#" onclick="filterSelection('O')">O</a>
+        <a href="#" onclick="filterSelection('P')">P</a>
+        <a href="#" onclick="filterSelection('Q')">Q</a>
+        <a href="#" onclick="filterSelection('R')">R</a>
+        <a href="#" onclick="filterSelection('S')">S</a>
+        <a href="#" onclick="filterSelection('T')">T</a>
+        <a href="#" onclick="filterSelection('U')">U</a>
+        <a href="#" onclick="filterSelection('V')">V</a>
+        <a href="#" onclick="filterSelection('W')">W</a>
+        <a href="#" onclick="filterSelection('X')">X</a>
+        <a href="#" onclick="filterSelection('Y')">Y</a>
+        <a href="#" onclick="filterSelection('Z')">Z</a>
+      </div>
+      <div class="d-flex flex-wrap bg-light">
+        <div class="p-2 border rounded-sm"> Action </div>
+        <div class="p-2 border rounded-sm"> Adventure </div>
+        <div class="p-2 border rounded-sm"> Animation </div>
+        <div class="p-2 border rounded-sm"> Children </div>
+        <div class="p-2 border rounded-sm"> Comedy </div>
+        <div class="p-2 border rounded-sm">Crime</div>
+        <div class="p-2 border rounded-sm">Documentary</div>
+        <div class="p-2 border rounded-sm">Drama</div>
+        <div class="p-2 border rounded-sm">Family</div>
+        <div class="p-2 border rounded-sm">Fantasy</div>
+        <div class="p-2 border rounded-sm">Food</div>
+        <div class="p-2 border rounded-sm">Home and Garden</div>
+        <div class="p-2 border rounded-sm">Horror </div>
+        <div class="p-2 border rounded-sm">Mini-Series</div>
+        <div class="p-2 border rounded-sm">Mystery</div>
+        <div class="p-2 border rounded-sm">News</div>
+        <div class="p-2 border rounded-sm">Reality</div>
+        <div class="p-2 border rounded-sm">Romance</div>
+        <div class="p-2 border rounded-sm">Sci-Fi</div>
+        <div class="p-2 border rounded-sm">Sport</div>
+        <div class="p-2 border rounded-sm">Suspense</div>
+        <div class="p-2 border rounded-sm">Talk Show</div>
+        <div class="p-2 border rounded-sm">Thriller</div>
+        <div class=" border p-2 border rounded-sm">Travel</div>
+      </div>
+      </div>
+      <br>
+
+      <div class="row" style="height:2000px; background-color: #cccccc;">
+      <div class="col-sm-10" style="height:2000px; background-color: white; margin-left: 110px; margin-top: 20px;">
+        <div class="row" style="border-style:groove; border-color:#f2f2f2">
+          <div class="col-sm-3">
+          <b class="">TOP 12 SHOWS</b>
+        </div>
+
+        <div class="col-sm-6"></div>
+        <div class="search-container">
+      <form action="/action_page.php">
+      <input style="margin-top:12px" type="text" placeholder="Search.." name="search">
+      </from>
+    </div>
+
+    <div class="row" style="margin-top:10px;">
+    <div class="col-sm-2 filterDiv M">
+        <div class="img-container">
+    <img src="maari-2.jpg" class="rounded" alt="" width="330px"
+    height="500px">
+    <button type="submit" id="sta1">start</button>
+    <button type="submit" id="sto1">stop</button>
+    <P><b>MARY-2</b><br>
+    Rowdy Baby</p>
+    </a>
+    </div>
+    </div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv K">
+<div class="img-container">
+<img src="kanaa.jpg" class="rounded" alt="" width="330px" height="500px">
+  <button type="submit" text-align="center" id="sta2">start</button>
+  <button type="submit" text-align="center"  id="sto2">stop</button>
+  <p><b>KANAA</b><br>
+    Oththaiyadi Paathaiyila</p>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv T">
+<div class="img-container">
+<img src="theri.jpg" class="rounded" alt="" width="330px" height="500px">
+<button type="submit" id="sta3">start</button>
+<button type="submit" id="sto3">stop</button>
+<P><b>THERI</b><br>
+EENA MEENA TEEKA</P>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv N">
+<div  class="img-container">
+<img src="naanum rowdi.jpeg" class="rounded" alt="" width="330px"
+height="500px">
+<button type="submit" id="sta4">start</button>
+<button type="submit" id="sto4">stop</button>
+<P><b>NAANUM ROWDY THAAN</b><br>
+Thankame Unnathaan
+</P>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv N">
+<div  class="img-container">
+<img src="munpaniya.jpg" class="rounded" alt="" width="330px"
+height="500px">
+<button type="submit" id="sta5">start</button>
+<button type="submit" id="sto5">stop</button>
+<P><b>NANTHA</b><br>
+Munpaniya Muthal Malaiya
+</P>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv B">
+<div  class="img-container">
+<img src="bombay.JPG" class="rounded" alt="" width="330px"
+height="500px">
+<button type="submit" id="sta6">start</button>
+<button type="submit" id="sto6">stop</button>
+<P><b>BOMBAY</b><br>
+Kannaalane Enathu Kannai
+</P>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv V">
+<div  class="img-container">
+<img src="velai.jpg" class="rounded" alt="" width="330px"
+height="500px">
+<button type="submit" id="sta7">start</button>
+<button type="submit" id="sto7">stop</button>
+<P><b>VELAIYILLA PADDATHAARY</b><br>
+Amma Amma
+</P>
+</div>
+</div>
+
+<div class="col-sm-1"></div>
+<div class="col-sm-2 filterDiv V">
+<div  class="img-container">
+<img src="Viswasam.jpg" class="rounded" alt="" width="330px"
+height="500px">
+<button type="submit" id="sta8">start</button>
+<button type="submit" id="sto8">stop</button>
+<P><b>VISWASAM</b><br>
+Kannan Kanne
+</P>
+</div>
+</div>
+
+       <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+    </script>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script>
+    sc.initialite({
+      client_id:"340f063c670272fac27cfa67bffcafc4"
+    });
+
+    $(document).redy (function(){
+      sc.stream('/tracks/546801033',function(sound){
+$("#sta1").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto1").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+
+    $(document).redy (function(){
+      sc.stream('/tracks/577816632',function(sound){
+$("#sta2").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto2").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+
+    $(document).redy (function(){
+      sc.stream('/tracks/290818895',function(sound){
+$("#sta3").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto3").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+    $(document).redy (function(){
+      sc.stream('/tracks/225519099',function(sound){
+$("#sta4").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto4").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+    $(document).redy (function(){
+      sc.stream('/tracks/354639239',function(sound){
+$("#sta5").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto5").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+    $(document).redy (function(){
+      sc.stream('/tracks/26197559',function(sound){
+$("#sta6").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto6").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+    $(document).redy (function(){
+      sc.stream('/tracks/134780870',function(sound){
+$("#sta7").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto7").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+
+    $(document).redy (function(){
+      sc.stream('/tracks/571882998',function(sound){
+$("#sta8").click(function(e){
+  e.preventDefault();
+  sound.start();
+})
+$("#sto8").click(function(e) {
+  e.preventDefault();
+  sound.stop();
+         });
+      });)
+    })
+    </script>
+
+</body>
+</html>
